@@ -19,7 +19,9 @@
     <ng-template #sinarticulos>
         No hay articulos
     </ng-template>
+    <br>
     <div>
+        <h3>Ingrese el nuevo articulo</h3>
         <p>
             Codigo: <input type="number" [(ngModel)]="art.codigo">
         </p>
@@ -31,6 +33,7 @@
         </p>
         <p>
             <button (click)="agregar()">Agregar</button>
+
             <button (click)="modificar()">Modificar</button>
         </p>
     </div>

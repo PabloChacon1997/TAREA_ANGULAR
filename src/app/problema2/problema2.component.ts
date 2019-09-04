@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Problema2Component implements OnInit {
 
+    valor: number;
+
   constructor() { }
 
   ngOnInit() {
+    this.valor=Math.trunc(Math.random() * 6) + 1;
   }
 
 }
