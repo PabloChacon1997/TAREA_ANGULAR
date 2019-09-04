@@ -5,16 +5,26 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
+import { APP_ROUT } from './app.routes';
+import { Problema1Component } from './problema1/problema1.component';
+import { FormsModule } from '@angular/forms';
+import { Problema2Component } from './problema2/problema2.component';
+import { Problema3Component } from './problema3/problema3.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    BodyComponent
+    BodyComponent,
+    Problema1Component,
+    Problema2Component,
+    Problema3Component
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUT,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
