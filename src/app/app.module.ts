@@ -13,7 +13,8 @@ import { Problema3Component } from './problema3/problema3.component';
 import { Problema4Component } from './problema4/problema4.component';
 import { Problema5Component } from './problema5/problema5.component';
 import { Problema6Component } from './problema6/problema6.component';
-import { ElementosModule } from './problema6/elementos/elementos.module';
+import { ArticulosService } from './problema4/articulos.service';
+
 
 @NgModule({
   declarations: [
@@ -31,10 +32,10 @@ import { ElementosModule } from './problema6/elementos/elementos.module';
   imports: [
     BrowserModule,
     APP_ROUT,
-    FormsModule,
-    ElementosModule
+    FormsModule
   ],
-  providers: [],
+  exports: [ Problema6Component],
+  providers: [ArticulosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

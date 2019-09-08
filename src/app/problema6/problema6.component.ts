@@ -8,11 +8,10 @@ import { Component, OnInit, Input } from '@angular/core';
 export class Problema6Component implements OnInit {
 
 
-  @Input() valor: number;
+  valor1: number = 6;
+  
   constructor() { }
 
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 
 }
