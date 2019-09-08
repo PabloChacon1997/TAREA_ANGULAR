@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Problema6Component implements OnInit {
 
-  constructor() { }
+  constructor() {
+    
+  }
 
   ngOnInit() {
+
   }
 
 }
